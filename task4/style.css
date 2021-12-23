@@ -1,0 +1,119 @@
+   @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(img/bg-desktop.svg);
+        background-color: #7040ad;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 80px;
+        flex-wrap: wrap;
+      }
+
+      .home-img img {
+        width: 780px;
+      }
+
+      .txt {
+        width: 500px;
+        height: 300px;
+        margin-top: 45px;
+      }
+      .txt h1 {
+        color: white;
+      }
+      .txt p {
+        color: hsla(0, 0%, 100%, 0.55);
+        font-size: 19px;
+        padding-bottom: 50px;
+      }
+      .txt a {
+        color: white;
+        text-decoration: none;
+        font-family: Helvetica;
+        background-color: #fd75e6;
+        padding: 16px 35px;
+        border-radius: 25px;
+        outline: none;
+        font-size: 17px;
+        transition: 0.5s;
+      }
+      .txt a:hover {
+        color: rgb(201, 96, 201);
+        background-color: #000000;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 165px 45px 0 0;
+      }
+      .footer img {
+        margin-left: 20px;
+        width: 40px;
+      }
+
+      /* Queries */
+
+      @media screen and (max-width: 1570px) {
+        .footer {
+          padding: 5px 40px 0 0;
+        }
+      }
+
+      @media screen and (max-width: 1368px) {
+        .container {
+          justify-content: space-around;
+        }
+
+        .home-img img {
+          width: 650px;
+        }
+
+        .footer {
+          padding-top: 90px;
+        }
+      }
+
+      @media screen and (max-width: 650px) {
+        .container {
+          margin-top: 48px;
+        }
+
+        .home-img img {
+          width: 290px;
+        }
+
+        .txt {
+          width: 400px;
+          margin: 45px 15px;
+          text-align: center;
+        }
+        .txt h1 {
+          font-size: 25px;
+        }
+        .txt p {
+          font-size: 16px;
+        }
+
+        .footer {
+          justify-content: center;
+          padding: 50px 0 10px 0;
+        }
+        .footer img {
+          width: 30px;
+          margin: 0 6px;
+        }
+      }
